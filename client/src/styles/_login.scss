@@ -1,0 +1,74 @@
+.login-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px;
+
+    .login-form {
+      h1 {
+        font-size: 2.5rem;
+        color: $primary-medium;
+      }
+
+      form {
+        max-width: 400px;
+        
+        .cadastro-top {
+          margin-top: 20px;
+          
+          input {
+            margin-top: 3px;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 5px 5px;
+            border-radius: 5px;
+            border: 1px solid $gray;
+          }
+        }
+
+        .cadastro-privacidade {
+          margin-top: 20px;
+          input {
+            margin-right: 10px;
+          }
+        }
+
+        .cadastro-bottom {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+          margin-top: 20px;
+
+          input {
+            background-color: $primary;
+            color: white;
+            border: none;
+            font-size: 1.3rem;
+            border-radius: 10px;
+            padding: 5px ;
+            margin-bottom: 10px;
+            width: 80%;
+            cursor: pointer;
+          }
+
+          a {
+            color: $primary-medium;
+          }
+        }
+      }
+    }
+
+    .cadastro-image {
+      place-self: center;
+    }
+  }
+}

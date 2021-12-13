@@ -1,0 +1,32 @@
+.categorias-submenu {
+    width: 14rem;
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    list-style: none;
+    text-align: start;
+  
+    li {
+        background: $primary-medium-darker;
+        cursor: pointer;
+    }
+
+    &.clicked {
+        display: none;
+    }
+}
+
+.submenu-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 13px 20px;
+
+    &:hover {
+        background: $primary-medium-dark;
+        color: white;
+    }
+}
+

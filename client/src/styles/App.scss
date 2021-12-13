@@ -1,0 +1,66 @@
+@import 'colors';
+@import "~bootstrap/scss/bootstrap";
+
+@import './components/header';
+@import './components/productList';
+@import './components/productItem';
+@import './components/ratingBox';
+@import './components/footer';
+@import './components/lojaItem';
+@import './components/dropdown';
+
+@import 'index';
+@import 'empty-state';
+@import 'pesquisa';
+@import 'loja';
+@import 'produto';
+@import 'cadastro';
+@import 'login';
+@import 'sidebar';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: $primary;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: $primary-medium;
+}
+::-webkit-scrollbar-track{
+  background: $primary-dark;
+}
+
+
+
+body {
+  color: $primary-darker;
+  background-color: $little-dark-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.main-content {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.desktop-only {
+  display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none !important; 
+  }
+}

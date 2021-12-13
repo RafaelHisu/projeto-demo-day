@@ -1,0 +1,156 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+
+  background-color: $primary-dark;
+  z-index: 100;
+
+  .dropBarHamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    svg {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    
+    flex: 1 0 0;
+    max-width: 1200px;
+
+    padding: 0 10px;
+    margin: 0 auto;
+
+    .text-logo {
+      display: none;
+    }
+
+    .logo *,
+    .right-side * {
+      color: $primary;
+      font-size: 1.5rem;
+      vertical-align: middle; 
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:last-child {
+        justify-self: flex-start;
+      }
+    }
+
+    img {
+      height: 35px;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      background-color: white;
+      margin: 3px 15px;
+      border-radius: 5px;
+
+      input {
+        width: 100%;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        padding: 5px 15px;
+
+        &:focus {
+          outline: 0;
+
+          +button {
+            background: $primary;
+            color: white;
+          }
+        }
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        background: white;
+        color: $primary;
+        border: 0;
+        border-radius: 0 5px 5px 0;
+        font-size: 1.5rem;
+        padding: 8px;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $primary;
+          color: white;
+        }
+      }
+    }
+
+    .profile-picture {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .header {
+
+    .wrapper {
+      .text-logo {
+        display: inline-block;
+      }
+
+      .image-logo {
+        margin-right: 10px;
+      }
+
+      .right-side {
+        .store-icon {
+          font-size: 2rem;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+
+        .profile {
+          display: flex;
+          align-items: center;
+          font-size: 0.7rem;
+          text-decoration: none;
+          color: white; 
+
+        }
+
+       
+
+  
+      }
+    }
+  }
+}

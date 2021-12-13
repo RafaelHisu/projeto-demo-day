@@ -1,0 +1,55 @@
+.index-page {
+  min-height: 100vh;
+  padding: 0 0 50px;
+  background-color: $little-dark-white;
+
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $primary-dark-medium;
+
+    .intro-banner {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      img {
+        max-width: 1200px;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+
+      .banner-mobile {
+        display: none;
+      }
+  
+      @media screen and (max-width: 800px) {
+        .banner-mobile {
+          display: block;
+        }
+  
+        .banner-desktop {
+          display: none;
+        }
+      }
+    }
+  }
+  .products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 5px;
+
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 50px;
+
+      h2 {
+        color: $primary-dark;
+        display: block;
+      }
+    }
+  }
+}

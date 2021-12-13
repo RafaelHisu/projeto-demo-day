@@ -1,0 +1,112 @@
+.loja-page {
+  padding: 25px;
+
+  p {
+    margin: 0;
+  }
+
+  .loja-profile-box {
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    img {
+      border-radius: 50%;
+      width: 80%;
+      aspect-ratio: 1;
+      align-self: center;
+    }
+
+    .loja-profile-info {
+      div {
+        display: flex;
+        align-items: center;
+
+        svg {
+          font-size: 1.5rem;
+          margin-left: 10px;
+          cursor: pointer;
+          color: $gray;
+
+          &.favoritado {
+            color: $secondary;
+          }
+        }
+      }
+      b {
+        color: $primary-dark;
+      }
+      span {
+        background-color: $primary-lighter;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid $primary-light;
+        position: absolute;
+        bottom: 25px;
+
+        b {
+          color: $primary-medium;
+        }
+      }
+    }
+
+    .loja-profile-endereco {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-self: flex-end;
+      text-align: right;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border: 2px solid $primary-medium;
+        color: $primary-medium;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: 100ms;
+        max-width: 150px;
+        align-self: flex-end;
+
+        &:hover {
+          color: white;
+          background-color: $primary;
+          border: 2px solid $primary;
+        }
+      }
+    }
+  }
+
+  
+  .loja-products-box {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+    border-radius: 5px;
+    margin-top: 25px;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 25px;
+    }
+
+    div {
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: $primary-medium;
+    }
+  }
+}

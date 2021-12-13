@@ -1,0 +1,112 @@
+.sidebar{
+background: rgb(0%, 24%, 54%);
+grid-area: sidebar;
+padding: 2.7rem;
+width: 270px;
+height: 930px;
+left: -3px;
+transition: all 0.5s;
+}
+
+.sidebar-title{
+display:flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+margin-top: 20px;
+}
+
+h4{
+margin-top: 15px;
+color: white;
+}
+
+
+.line-dashboard{
+left: 7.84%;
+right: 10px;
+top: 58.28%;
+bottom: 41.72%;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 0.1px solid rgba(251, 251, 251, 0.41);
+}
+
+.sidebar-img{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.sidebar-title > div > img{
+width: 140px;
+}
+.sidebar-title > div > h1{
+font-size:18px;
+display: inline;
+margin-left: 15px;
+} 
+
+.sidebar-title > i{
+font-size: 18px;
+display: none;
+}
+.sidebar-link{
+color: white;
+padding: 10px;
+}
+
+.active-menu-link{
+color: white !important;
+}
+
+
+.sidebar-link > a {
+font-size: 18px;
+text-decoration: none;
+color: white;
+font-weight: 500;
+margin-left: 10px;
+}
+
+
+.sidebar-link a:focus{
+padding: 5px;
+background: rgba(255, 255, 255, 0.178);
+border-radius: 4px;
+transition: 0.2s;
+}
+
+.sidebar-logout{
+margin-top: 20px;
+margin-left: 10px;
+color: white;
+}
+
+.sidebar-logout > a {
+text-decoration: none;
+color: white;
+font-weight: 500;
+margin-left: 10px;
+}
+
+.sidebar-logout a:focus{
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.178);
+    border-radius: 4px;
+    transition: 0.2s;
+    }
+
+.sidebar-responsive{
+display: inline !important;
+z-index: 9999 !important;
+position: absolute;
+}
+
+@media only screen and (max-width: 978px){
+.sidebar{
+    display: none;
+}
+
+
+}

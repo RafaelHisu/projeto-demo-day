@@ -1,0 +1,27 @@
+.pesquisa-page {
+  padding: 25px;
+
+  .pesquisa-box {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+
+    .pesquisa-title {
+      color: $primary-dark;
+    }
+
+    .pesquisa-subtitle {
+      color: $primary-medium;
+      margin-top: 25px;
+    }
+
+    .pesquisa-lojas {
+      display: flex;
+      overflow-x: hidden;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+  }
+}
